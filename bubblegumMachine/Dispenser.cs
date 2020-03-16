@@ -1,0 +1,7 @@
+﻿namespace bubblegumMachine
+{
+    class Dispenser
+    {
+
+    }
+}
