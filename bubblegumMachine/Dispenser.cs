@@ -13,7 +13,7 @@ namespace bubblegumMachine
         Bubblegum strawberry = new Bubblegum("Strawberry", "Red");
         Bubblegum apple = new Bubblegum("Apple", "Green");
 
-        public ArrayList Bubblegum = new ArrayList();
+        public ArrayList<Bubblegum> Bubblegum = new ArrayList<Bubblegum>();
 
         private int blueberryFill = 14;
         private int blackberryFill = 7;
@@ -27,13 +27,13 @@ namespace bubblegumMachine
         
 
         // det er denne metode som skal trække et random stykke tyggegummi 
-        public void DrawRandomGum()
+        public Bubblegum DrawRandomGum()
         {
             int drawGum = rand.Next(0, Bubblegum.Count);
 
-            var gum = Bubblegum[drawGum];
+            Bubblegum gum = Bubblegum[drawGum];
             Bubblegum.Remove(drawGum);
-            
+           return gum; 
         }
 
         public void PrintDrawRandom()
