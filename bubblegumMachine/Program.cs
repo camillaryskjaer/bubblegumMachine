@@ -15,7 +15,11 @@ namespace bubblegumMachine
             gui.RenderMenu();
             dispenser.FillDispenser();
             //dispenser.PrintBubblegum();
-            dispenser.DrawRandomGum();
+           Bubblegum g =  dispenser.DrawRandomGum();
+            
+            
+            //Her kan du printe dit bubblegum
+            Console.WriteLine(g.Name);
     }
     }
 }
