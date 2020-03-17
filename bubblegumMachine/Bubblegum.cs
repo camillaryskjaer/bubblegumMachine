@@ -2,34 +2,26 @@
 {
     class Bubblegum
     {
-		private char name;
+		private string name;
 
-		public char Name
+		public string Name
 		{
 			get { return name; }
 			set { name = value; }
 		}
 
-		private char color;
+		private string color;
 
-		public char Color
+		public string Color
 		{
 			get { return color; }
 			set { color = value; }
 		}
 
-		private char flavor;
 
-		public char Flavor
-		{
-			get { return flavor; }
-			set { flavor = value; }
-		}
-
-        public Bubblegum(char name, char color, char flavor)
+        public Bubblegum(string name, string color)
         {
             this.Color = color;
-            this.flavor = flavor;
             this.name = name;
         }
     }

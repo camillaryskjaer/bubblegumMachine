@@ -11,9 +11,11 @@ namespace bubblegumMachine
         static void Main(string[] args)
         {
             Gui gui = new Gui();
-
+            Dispenser dispenser = new Dispenser();
             gui.RenderMenu();
-
-        }
+            dispenser.FillDispenser();
+            //dispenser.PrintBubblegum();
+            dispenser.DrawRandomGum();
+    }
     }
 }
