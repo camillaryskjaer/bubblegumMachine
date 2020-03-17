@@ -13,7 +13,7 @@ namespace bubblegumMachine
         Bubblegum strawberry = new Bubblegum("Strawberry", "Red");
         Bubblegum apple = new Bubblegum("Apple", "Green");
 
-        public ArrayList Bubblegum = new ArrayList();
+        public List<Bubblegum> Bubblegum = new List<Bubblelist>();
 
         private int blueberryFill = 14;
         private int blackberryFill = 7;
